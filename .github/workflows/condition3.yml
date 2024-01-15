@@ -11,6 +11,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Exécuter un script si la condition est remplie
-      run: echo "La valeur de SEUIL est dans l'intervalle [0, 1]"
+      run: echo "La valeur de SEUIL est dans l'intervalle [0, 1]. La valeur exacte est {{ env.SEUIL }}""
+
 
 
